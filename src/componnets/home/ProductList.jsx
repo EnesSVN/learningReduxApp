@@ -1,6 +1,16 @@
+import { useNavigate } from "react-router-dom";
+
 const ProductList = ({ key, product }) => {
+  const navigate = useNavigate();
+  const handleDetail = () => {
+    navigate(`/products/${product.id}`);
+  };
   return (
-    <div className=" w-[250px] p-2 m-2 border border-gray-300 rounded-md relative cursor-pointer">
+    <div
+      className=" w-[250px] p-2 m-2 border border-gray-300 rounded-md relative cursor-pointer"
+      key={key}
+      onClick={handleDetail}
+    >
       <div>
         <div className="text-2xl font-bold absolute rounded-md top-0 right-0 bg-black text-white p-2 m-1">
           {product?.price}
