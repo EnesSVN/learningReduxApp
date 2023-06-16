@@ -4,7 +4,7 @@ import { getCategories } from "../../redux/categorySlice";
 
 const Category = () => {
   const dispatch = useDispatch();
-  const { categories } = useSelector((state) => state.category);
+  const { categories } = useSelector((state) => state.categories);
 
   useEffect(() => {
     dispatch(getCategories());

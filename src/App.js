@@ -8,16 +8,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <>
-      <PageContainer>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </Router>
-      </PageContainer>
-    </>
+    <PageContainer>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </PageContainer>
   );
 }
 

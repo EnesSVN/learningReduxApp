@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { build } from "vite";
 
 const initialState = {
   categories: [],
